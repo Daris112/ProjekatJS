@@ -142,7 +142,7 @@ body{
       font-size: 37px;
     }
 
-    .div5-1 {
+    .div2-1 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
