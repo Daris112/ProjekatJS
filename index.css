@@ -85,22 +85,22 @@ body{
       transition: 0.3s ease;
     }
 
-    .btn-red {
+    .btn1-2 {
       background: red;
       color: white;
     }
 
-    .btn-red:hover {
+    .btn1-2:hover {
       background: darkred;
     }
 
-    .btn-outline {
-      background: transparent;
+    .btn1-3 {
+      background: none;
       border: 2px solid white;
       color: white;
     }
 
-    .btn-outline:hover {
+    .btn1-3:hover {
       background: rgb(0, 0, 0);
       color: black;
     }
@@ -142,7 +142,7 @@ body{
       font-size: 37px;
     }
 
-    .container {
+    .div5-1 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
@@ -368,7 +368,7 @@ body{
     .contact-form button:hover {
       background: #b71c1c;
     }
-    .contact-info {
+    .info-section {
       flex: 1;
       background: #fff;
       padding: 20px;
