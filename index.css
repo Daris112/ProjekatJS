@@ -1,7 +1,6 @@
 body{
-      margin: 0;
-      padding: 0;
-
+    margin: 0;
+    padding: 0;
     }
     
    nav {
@@ -37,6 +36,7 @@ body{
       text-decoration: none;
       font-size: 15px;
       transition: color 0.3s ease;
+      font-size: 18px;
     }
 
     nav ul li a:hover {
@@ -144,7 +144,7 @@ body{
 
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       gap: 20px;
       max-width: 1000px;
       margin: auto;
@@ -165,7 +165,7 @@ body{
 
     .car-image {
       width: 100%;
-      height: 150px;
+      height: 170px;
       background: #e0f2f1;
       border-radius: 8px;
       margin-bottom: 15px;
@@ -234,6 +234,23 @@ body{
        color: red; 
     }  
 
+    @media (min-width : 1200px){
+      #div1{
+        height: 700px;
+      }
+      .hero h1{
+        font-size: 45px;
+        margin-top: 100px;
+
+      }
+      .hero p{
+        font-size: 25px;
+  
+      }
+
+      
+    }
+
     #div3{
       background-color: white;
       margin-top: 30px;
@@ -259,16 +276,15 @@ body{
     }
 
     #div4{
-      margin-top: 30px; 
+      margin-top: 70px; 
        background-color: #f8f2f2;
       height: 800px;
      
     }
 
-      h2 {
+      #h3-1 {
       text-align: center;
       margin-bottom: 30px;
-      color: black;
       }
     
 
@@ -436,3 +452,65 @@ body{
       font-size: 14px;
       color: rgb(128, 128, 128);
     }
+
+    #reviews{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .review-card{
+      background: rgb(252, 251, 251);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4)
+    }
+
+    .p6-1{
+      font-size: 17px;
+      color: black;
+    }
+
+    .review-card p{
+      font-size: 20px;
+    }
+
+    #div6{
+      margin-top: 100px;
+    }
+
+    #button6-1{
+      width: 60%;
+      padding: 12px;
+      background: #d32f2f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-left: 270px;
+      margin-top: 20px;
+    }
+    
+    #button6-1:hover{
+       background: #b71c1c;
+    }
+
+    #textarea6-1{
+      width: 58%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 270px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 90px;
+    }
+
+    #customers-reviews{
+      background: rgb(252, 251, 251);
+      border-radius: 16px;
+      padding: 35px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
