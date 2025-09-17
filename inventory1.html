@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+    <div class="logo">Elite<p>Motors</p></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="inventory1.html">Inventory</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="rewievs.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+     <div id="div2">
+ <h1 id="h2-1">Car Listings</h1>
+
+  <div class="container">
+
+    <div class="div2-1">
+      <img src="images/bmw 3 series.webp" alt="" class="car-image">
+      <h3>BMW 3 Series</h3>
+      <p>2024 • Sedan • Premium Package</p>
+      <div class="price">$45,900</div>
+      <button class="btn2-1 view-details"
+      data-name="BMW 3 Series"
+      data-price="$45,900"
+      data-features="Leather Seats,Virtual Cockpit,Navigation System,Premium Audio"
+      data-specs="Engine: 2.0L Turbo, Horsepower: 261 HP, Transmission: 7-Speed Automatic, Drivetrain: AWD">
+      View Details
+    </button>
+    </div>
+   
+
+    <div class="div2-1">
+      <img src="images/mercedes c class.webp" alt="" class="car-image">
+      <h3>Mercedes-Benz C-Class</h3>
+      <p>2024 • Sedan • Luxury Line</p>
+      <div class="price">$52,400</div>
+      <button class="btn2-1 view-details"
+      data-name="Mercedes-Benz C-Class"
+      data-price="$52,400"
+      data-features="MBUX Infotainment,LED Headlights,Wireless Charging,Premium Sound,Ambient Lighting"
+      data-specs="Engine: 2.0L Turbo, Horsepower: 255 HP, Transmission: 9-Speed Automatic, Drivetrain: RWD">
+      View Details
+    </button>
+    </div>
+    
+    <div class="div2-1">
+      <img src="images/mercedes glc.webp" alt="" class="car-image">
+      <h3>Mercedes-Benz GLC</h3>
+      <p>2024 • SUV • Luxury line</p>
+      <div class="price">$65,990</div>
+      <button class="btn2-1 view-details"
+      data-name="Mercedes-Benz GLC"
+      data-price="$65,990"
+      data-features="Leather Seats,Virtual Cockpit,Navigation System,Premium Audio"
+      data-specs="Engine: 2.0L Turbo with mild hybrid drive, Horsepower: 255 HP, Transmission: 9-Speed Automatic">
+      View Details
+    </button>
+    </div>
+
+    <div class="div2-1">
+      <img src="images/audi a4.webp" alt="" class="car-image">
+      <h3>Audi A4</h3>
+      <p>2024 • Sedan • Sport Line</p>
+      <div class="price">$39,500</div>
+     <button class="btn2-1 view-details"
+      data-name="Audi A4"
+      data-price="$39,500"
+      data-features="Virtual Cockpit,Quattro AWD,Bang & Olufsen Audio,Adaptive Cruise Control,Panoramic Sunroof"
+      data-specs="Engine: 2.0L TSFI 4-Cylinder, Horsepower: 261 HP, Transmission: 7-Speed S tronic">
+      View Details
+    </button>
+    </div>
+
+    <div class="div2-1">
+      <img src="images/toyota corolla.webp" alt="" class="car-image">
+      <h3>Toyota Corolla</h3>
+      <p>2024 • Sedan • Hybrid</p>
+      <div class="price">$28,700</div>
+       <button class="btn2-1 view-details"
+      data-name="Toyota Corolla"
+      data-price="$28,700"
+      data-features="Toyota Safety Sense 2.0,Apple CarPlay,Automatic Climate Control,LED Headlights,Backup Camera"
+      data-specs="Engine: 2.0L 4-Cylinder, Horsepower: 169 HP, Transmission: CVT, Drivetrain: FWD">
+      View Details
+    </button>
+    </div>
+
+    <div class="div2-1">
+      <img src="images/bmw x5.webp" alt="" class="car-image">
+      <h3>BMW X5</h3>
+      <p>2024 • SUV • M Package</p>
+      <div class="price">$65,900</div>
+       <button class="btn2-1 view-details"
+      data-name="BMW X5"
+      data-price="$65,900"
+      data-features="xDrive AWD,Panoramic Sunroof,Harman Kardon Audio,Gesture Control,Wireless Charging"
+      data-specs="Engine: 3.0L Turbo 6-Cylinder, Horsepower: 335 HP, Transmission: 8-Speed Automatic, Drivetrain: AWD">
+      View Details
+    </button>
+    </div>
+  </div>
+
+  <div class="full-inventory">
+    <a href="inventory.html" class="a1-1"><button id="btn-inventory">Full Inventory</button></a>
+  </div>
+
+   <div class="modal" id="carModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div class="price" id="modalPrice"></div>
+      <h3>Key Features</h3>
+      <ul id="modalFeatures"></ul>
+      <h3>Specifications</h3>
+      <ul id="modalSpecs"></ul>
+    </div>
+  </div>
+
+   <script>
+    const modal = document.getElementById("carModal");
+    const closeModal = document.getElementById("closeModal");
+
+    const title = document.getElementById("modalTitle");
+    const price = document.getElementById("modalPrice");
+    const features = document.getElementById("modalFeatures");
+    const specs = document.getElementById("modalSpecs");
+
+    document.querySelectorAll(".view-details").forEach(button => {
+      button.addEventListener("click", () => {
+        title.textContent = button.dataset.name;
+        price.textContent = button.dataset.price;
+
+        features.innerHTML = "";
+        button.dataset.features.split(",").forEach(f => {
+          const li = document.createElement("li");
+          li.textContent = f;
+          features.appendChild(li);
+        });
+
+        specs.innerHTML = "";
+        button.dataset.specs.split(",").forEach(s => {
+          const li = document.createElement("li");
+          li.textContent = s.trim();
+          specs.appendChild(li);
+        });
+
+        modal.style.display = "flex";
+      });
+    });
+
+
+    closeModal.onclick = () => { modal.style.display = "none"; };
+    window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+  </script>
+
+  </div>
+</body>
+</html>

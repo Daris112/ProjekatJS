@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+    <div class="logo">Elite<p>Motors</p></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="inventory1.html">Inventory</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="rewievs.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+    <div id="div5">
+    <h1>Contact Us</h1>
+  <div class="div5-1">
+    <div class="contact-section">
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone">
+        <select>
+          <option value="">General Inquiry</option>
+          <option value="">Sales</option>
+          <option value="">Service</option>
+          <option value="">Schedule Test Drive</option>
+        </select>
+        <textarea rows="4" placeholder="Tell us how we can help you..."></textarea>
+        <button onclick="sendMessage()">Send Message</button>
+      </div>
+
+
+      <div class="info-section">
+        <h2>Visit Our Showroom</h2>
+        <div class="info-item">
+          <strong>Address:</strong>
+          123 Luxury Drive, Prizren, Kosovo 12345
+        </div>
+        <div class="info-item">
+          <strong>Phone:</strong>
+          Sales: (555) 123-4567 <br>
+          Service: (555) 123-4568
+        </div>
+        <div class="info-item">
+          <strong>Email:</strong>
+          info@elitemotors.com <br>
+          service@elitemotors.com
+        </div>
+        <div class="info-item">
+          <strong>Hours:</strong>
+          Mon - Fri: 9:00 - 20:00  <br>
+          Sat: 9:00 - 18:00  <br>
+          Sun: 11:00 - 17:00 
+        </div>
+      </div>
+    </div>
+  </div>
+   <script>
+    function sendMessage() {
+      alert("Your message has been sent! Thank you for contacting Elite Motors.");
+    }
+  </script>
+</body>
+</html>
