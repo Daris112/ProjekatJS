@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+      body{
+        background-color: rgb(248, 242, 242);
+      }
+    </style>
 </head>
 <body>
 
@@ -24,17 +29,21 @@
     <h1>Customers Reviews</h1>
     <div id="reviews">
     <div class="review-card">
+      
       <h2 class="h6-1">John Smith</h2>
+      <p class="p6-2">⭐⭐⭐⭐⭐</p>
       <p class="p6-1">BMW 3 series owner</p>
       <p>"Exceptional service and quality vehicles. The team at Elite Motors made my BMW purchase seamless and enjoyable. Highly recommended!"</p>
     </div>
     <div class="review-card">
       <h2 class="h6-1">Maria Johnson</h2>
+      <p class="p6-2">⭐⭐⭐⭐⭐</p>
       <p class="p6-1">Mercedes-Benz C class owner</p>
       <p>"Professional staff, transparent pricing, and excellent after-sales support. My Mercedes C-Class has been perfect, and the buying experience was outstanding."</p>
     </div>
     <div class="review-card">
       <h2 class="h6-1">David Wilson</h2>
+      <p class="p6-2">⭐⭐⭐⭐⭐</p>
       <p class="p6-1">Audi A4 owner</p>
       <p>"Elite Motors helped me find the perfect Audi A4.Their financing options made the decision easy. Great experience!"</p>
     </div>
@@ -44,6 +53,31 @@
       <textarea rows="4" placeholder="Your review..." id="textarea6-1"></textarea>
       <button onclick="sendMessage()" id="button6-1">Send Message</button>
     </div>
+     <footer>
+    <div class="footer-container">
+      <div>
+        <h3>Elite<p id="p5-1">Motors</p></h3>
+        <p>Your trusted partner for premium vehicles. We offer the finest selection of BMW, Mercedes-Benz, Audi, Toyota, and a lot of other vehicles with exceptional customer service.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#div2">View Inventory</a></li>
+          <li><a href="#div4">Services</a></li>
+          <li><a href="#div3">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <p>123 Luxury Drive, Premium City, PC 12345</p>
+        <p>(555) 123-4567</p>
+        <p>info@elitemotors.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Elite Motors. All rights reserved. | Privacy Policy | Terms of Service
+    </div>
+  </footer>
   </div>
  <script>
     function sendMessage() {

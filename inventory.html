@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+      body{
+        background-color: rgb(248, 242, 242);
+      }
+    </style>
 </head>
 <body>
     <nav>
     <div class="logo logo-inventory">Elite<p>Motors</p></div>
     <ul>
-      <li><a href="index.html" id="a-inventory">Back</a></li>
+      <li><a href="inventory1.html" id="a-inventory">Back</a></li>
     </ul>
   </nav>
-
   <div class="container">
-    <div class="div2-1">
+
+  <div class="div2-1">
       <img src="images/bmw 3 series.webp" alt="" class="car-image">
       <h3>BMW 3 Series</h3>
       <p>2024 • Sedan • Premium Package</p>
       <div class="price">$45,900</div>
+      <button class="btn2-1 view-details"
+      data-name="BMW 3 Series"
+      data-price="$45,900"
+      data-features="Leather Seats,Virtual Cockpit,Navigation System,Premium Audio"
+      data-specs="Engine: 2.0L Turbo, Horsepower: 261 HP, Transmission: 7-Speed Automatic, Drivetrain: AWD">
+      View Details
+    </button>
     </div>
    
 
@@ -28,6 +40,13 @@
       <h3>Mercedes-Benz C-Class</h3>
       <p>2024 • Sedan • Luxury Line</p>
       <div class="price">$52,400</div>
+      <button class="btn2-1 view-details"
+      data-name="Mercedes-Benz C-Class"
+      data-price="$52,400"
+      data-features="MBUX Infotainment,LED Headlights,Wireless Charging,Premium Sound,Ambient Lighting"
+      data-specs="Engine: 2.0L Turbo, Horsepower: 255 HP, Transmission: 9-Speed Automatic, Drivetrain: RWD">
+      View Details
+    </button>
     </div>
     
     <div class="div2-1">
@@ -35,6 +54,13 @@
       <h3>Mercedes-Benz GLC</h3>
       <p>2024 • SUV • Luxury line</p>
       <div class="price">$65,990</div>
+      <button class="btn2-1 view-details"
+      data-name="Mercedes-Benz GLC"
+      data-price="$65,990"
+      data-features="Leather Seats,Virtual Cockpit,Navigation System,Premium Audio"
+      data-specs="Engine: 2.0L Turbo with mild hybrid drive, Horsepower: 255 HP, Transmission: 9-Speed Automatic">
+      View Details
+    </button>
     </div>
 
     <div class="div2-1">
@@ -42,6 +68,13 @@
       <h3>Audi A4</h3>
       <p>2024 • Sedan • Sport Line</p>
       <div class="price">$39,500</div>
+     <button class="btn2-1 view-details"
+      data-name="Audi A4"
+      data-price="$39,500"
+      data-features="Virtual Cockpit,Quattro AWD,Bang & Olufsen Audio,Adaptive Cruise Control,Panoramic Sunroof"
+      data-specs="Engine: 2.0L TSFI 4-Cylinder, Horsepower: 261 HP, Transmission: 7-Speed S tronic">
+      View Details
+    </button>
     </div>
 
     <div class="div2-1">
@@ -49,6 +82,13 @@
       <h3>Toyota Corolla</h3>
       <p>2024 • Sedan • Hybrid</p>
       <div class="price">$28,700</div>
+       <button class="btn2-1 view-details"
+      data-name="Toyota Corolla"
+      data-price="$28,700"
+      data-features="Toyota Safety Sense 2.0,Apple CarPlay,Automatic Climate Control,LED Headlights,Backup Camera"
+      data-specs="Engine: 2.0L 4-Cylinder, Horsepower: 169 HP, Transmission: CVT, Drivetrain: FWD">
+      View Details
+    </button>
     </div>
 
     <div class="div2-1">
@@ -56,93 +96,236 @@
       <h3>BMW X5</h3>
       <p>2024 • SUV • M Package</p>
       <div class="price">$65,900</div>
+       <button class="btn2-1 view-details"
+      data-name="BMW X5"
+      data-price="$65,900"
+      data-features="xDrive AWD,Panoramic Sunroof,Harman Kardon Audio,Gesture Control,Wireless Charging"
+      data-specs="Engine: 3.0L Turbo 6-Cylinder, Horsepower: 335 HP, Transmission: 8-Speed Automatic, Drivetrain: AWD">
+      View Details
+    </button>
     </div>
     
-    <div class="div2-1">
-      <img src="images/audiq5.webp" alt="" class="car-image">
-      <h3>BMW 3 Series</h3>
-      <p>2024 • Sedan • Premium Package</p>
-      <div class="price">$45,900</div>
-    </div>
-   
+<div class="div2-1">
+  <img src="images/audiq5.webp" alt="" class="car-image">
+  <h3>Audi Q5</h3>
+  <p>2024 • SUV • Premium Package</p>
+  <div class="price">$45,800</div>
+  <button class="btn2-1 view-details"
+    data-name="Audi Q5"
+    data-price="$45,800"
+    data-features="Leather Seats, Virtual Cockpit, Panoramic Sunroof, Premium Audio"
+    data-specs="Engine: 2.0L Turbo I4, Horsepower: 201 hp, Transmission: 7-Speed Automatic, Drivetrain: AWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/audiq7.webp" alt="" class="car-image">
-      <h3>Mercedes-Benz C-Class</h3>
-      <p>2024 • Sedan • Luxury Line</p>
-      <div class="price">$52,400</div>
-    </div>
-    
-    <div class="div2-1">
-      <img src="images/mazda6.webp" alt="" class="car-image">
-      <h3>Mercedes-Benz GLC</h3>
-      <p>2024 • SUV • Luxury line</p>
-      <div class="price">$65,990</div>
-    </div>
+<div class="div2-1">
+  <img src="images/audiq7.webp" alt="" class="car-image">
+  <h3>Audi Q7</h3>
+  <p>2024 • SUV • Luxury Line</p>
+  <div class="price">$59,500</div>
+  <button class="btn2-1 view-details"
+    data-name="Audi Q7"
+    data-price="$59,500"
+    data-features="7 Seats, MMI Navigation Plus, Virtual Cockpit, Premium Audio"
+    data-specs="Engine: 2.0L Turbo I4, Horsepower: 261 hp, Transmission: 8-Speed Automatic, Drivetrain: AWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/elantra.webp" alt="" class="car-image">
-      <h3>Audi A4</h3>
-      <p>2024 • Sedan • Sport Line</p>
-      <div class="price">$39,500</div>
-    </div>
+<div class="div2-1">
+  <img src="images/mazda6.webp" alt="" class="car-image">
+  <h3>Mazda 6</h3>
+  <p>2021 • Sedan • Grand Touring</p>
+  <div class="price">$27,300</div>
+  <button class="btn2-1 view-details"
+    data-name="Mazda 6"
+    data-price="$27,300"
+    data-features="Leather Seats, Bose Audio, Navigation, Adaptive Cruise Control"
+    data-specs="Engine: 2.5L Turbo I4, Horsepower: 250 hp, Transmission: 6-Speed Automatic, Drivetrain: FWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/mustang.webp" alt="" class="car-image">
-      <h3>Toyota Corolla</h3>
-      <p>2024 • Sedan • Hybrid</p>
-      <div class="price">$28,700</div>
-    </div>
+<div class="div2-1">
+  <img src="images/elantra.webp" alt="" class="car-image">
+  <h3>Hyundai Elantra</h3>
+  <p>2024 • Sedan • SEL Trim</p>
+  <div class="price">$21,500</div>
+  <button class="btn2-1 view-details"
+    data-name="Hyundai Elantra"
+    data-price="$21,500"
+    data-features="Wireless CarPlay, Digital Cluster, Premium Audio, SmartSense Safety"
+    data-specs="Engine: 2.0L I4, Horsepower: 147 hp, Transmission: CVT, Drivetrain: FWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/rav4.webp" alt="" class="car-image">
-      <h3>BMW X5</h3>
-      <p>2024 • SUV • M Package</p>
-      <div class="price">$65,900</div>
-    </div>
-     
-    <div class="div2-1">
-      <img src="images/urus.webp" alt="" class="car-image">
-      <h3>BMW 3 Series</h3>
-      <p>2024 • Sedan • Premium Package</p>
-      <div class="price">$45,900</div>
-    </div>
-   
 
-    <div class="div2-1">
-      <img src="images/ferraripurosangue.webp" alt="" class="car-image">
-      <h3>Mercedes-Benz C-Class</h3>
-      <p>2024 • Sedan • Luxury Line</p>
-      <div class="price">$52,400</div>
-    </div>
-    
-    <div class="div2-1">
-      <img src="images/488pista.webp" alt="" class="car-image">
-      <h3>Mercedes-Benz GLC</h3>
-      <p>2024 • SUV • Luxury line</p>
-      <div class="price">$65,990</div>
-    </div>
+<div class="div2-1">
+  <img src="images/mustang.webp" alt="" class="car-image">
+  <h3>Ford Mustang</h3>
+  <p>2024 • Coupe • GT Premium</p>
+  <div class="price">$43,900</div>
+  <button class="btn2-1 view-details"
+    data-name="Ford Mustang"
+    data-price="$43,900"
+    data-features="Leather Seats, SYNC 4, Premium Sound, Track Apps"
+    data-specs="Engine: 5.0L V8, Horsepower: 480 hp, Transmission: 6-Speed Manual, Drivetrain: RWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/porsche911.webp" alt="" class="car-image">
-      <h3>Audi A4</h3>
-      <p>2024 • Sedan • Sport Line</p>
-      <div class="price">$39,500</div>
-    </div>
+<div class="div2-1">
+  <img src="images/rav4.webp" alt="" class="car-image">
+  <h3>Toyota RAV4</h3>
+  <p>2024 • SUV • XLE Package</p>
+  <div class="price">$30,500</div>
+  <button class="btn2-1 view-details"
+    data-name="Toyota RAV4"
+    data-price="$30,500"
+    data-features="Toyota Safety Sense, Apple CarPlay, Premium Audio, AWD System"
+    data-specs="Engine: 2.5L I4, Horsepower: 203 hp, Transmission: 8-Speed Automatic, Drivetrain: AWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/audir8.webp" alt="" class="car-image">
-      <h3>Toyota Corolla</h3>
-      <p>2024 • Sedan • Hybrid</p>
-      <div class="price">$28,700</div>
-    </div>
+<div class="div2-1">
+  <img src="images/urus.webp" alt="" class="car-image">
+  <h3>Lamborghini Urus</h3>
+  <p>2024 • SUV • Performante</p>
+  <div class="price">$235,000</div>
+  <button class="btn2-1 view-details"
+    data-name="Lamborghini Urus"
+    data-price="$235,000"
+    data-features="Carbon Fiber Interior, Adaptive Air Suspension, Premium Sound, Super SUV"
+    data-specs="Engine: 4.0L Twin-Turbo V8, Horsepower: 657 hp, Transmission: 8-Speed Automatic, Drivetrain: AWD">
+    View Details
+  </button>
+</div>
 
-    <div class="div2-1">
-      <img src="images/mercedesgt.webp" alt="" class="car-image">
-      <h3>BMW X5</h3>
-      <p>2024 • SUV • M Package</p>
-      <div class="price">$65,900</div>
+
+<div class="div2-1">
+  <img src="images/ferraripurosangue.webp" alt="" class="car-image">
+  <h3>Ferrari Purosangue</h3>
+  <p>2024 • SUV • V12 Performance</p>
+  <div class="price">$400,000</div>
+  <button class="btn2-1 view-details"
+    data-name="Ferrari Purosangue"
+    data-price="$400,000"
+    data-features="Luxury Interior, Premium Audio, Advanced Aerodynamics, AWD"
+    data-specs="Engine: 6.5L V12, Horsepower: 715 hp, Transmission: 8-Speed Dual-Clutch, Drivetrain: AWD">
+    View Details
+  </button>
+</div>
+
+<div class="div2-1">
+  <img src="images/458italia.webp" alt="" class="car-image">
+  <h3>Ferrari 458 Italia</h3>
+  <p>2015 • Coupe • Italia</p>
+  <div class="price">$240,000</div>
+  <button class="btn2-1 view-details"
+    data-name="Ferrari 458 Italia"
+    data-price="$240,000"
+    data-features="Leather Interior, Premium Audio, F1-Style Steering Wheel, Race Mode"
+    data-specs="Engine: 4.5L V8, Horsepower: 562 hp, Transmission: 7-Speed Dual-Clutch, Drivetrain: RWD">
+    View Details
+  </button>
+</div>
+
+
+<div class="div2-1">
+  <img src="images/porsche911.webp" alt="" class="car-image">
+  <h3>Porsche 911 Carrera</h3>
+  <p>2024 • Coupe • Carrera</p>
+  <div class="price">$114,400</div>
+  <button class="btn2-1 view-details"
+    data-name="Porsche 911 Carrera"
+    data-price="$114,400"
+    data-features="Sport Chrono, Premium Audio, Adaptive Suspension, Porsche Communication Management"
+    data-specs="Engine: 3.0L Twin-Turbo Flat-6, Horsepower: 379 hp, Transmission: 8-Speed PDK, Drivetrain: RWD">
+    View Details
+  </button>
+</div>
+
+
+<div class="div2-1">
+  <img src="images/audir8.webp" alt="" class="car-image">
+  <h3>Audi R8</h3>
+  <p>2023 • Coupe • V10 Performance</p>
+  <div class="price">$158,600</div>
+  <button class="btn2-1 view-details"
+    data-name="Audi R8"
+    data-price="$158,600"
+    data-features="Virtual Cockpit, Carbon Fiber Package, Premium Audio, Magnetic Ride Suspension"
+    data-specs="Engine: 5.2L V10, Horsepower: 602 hp, Transmission: 7-Speed Dual-Clutch, Drivetrain: AWD">
+    View Details
+  </button>
+</div>
+
+<div class="div2-1">
+  <img src="images/mercedesgt.webp" alt="" class="car-image">
+  <h3>Mercedes-AMG GT</h3>
+  <p>2023 • Coupe • AMG GT</p>
+  <div class="price">$134,900</div>
+  <button class="btn2-1 view-details"
+    data-name="Mercedes-AMG GT"
+    data-price="$134,900"
+    data-features="AMG Performance Seats, Premium Audio, Dynamic Select, Aerodynamic Kit"
+    data-specs="Engine: 4.0L Twin-Turbo V8, Horsepower: 523 hp, Transmission: 7-Speed Dual-Clutch, Drivetrain: RWD">
+    View Details
+  </button>
+  </div>
+  
+
+   <div class="modal" id="carModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div class="price" id="modalPrice"></div>
+      <h3>Key Features</h3>
+      <ul id="modalFeatures"></ul>
+      <h3>Specifications</h3>
+      <ul id="modalSpecs"></ul>
     </div>
   </div>
+  
+  <script>
+    const modal = document.getElementById("carModal");
+    const closeModal = document.getElementById("closeModal");
+
+    const title = document.getElementById("modalTitle");
+    const price = document.getElementById("modalPrice");
+    const features = document.getElementById("modalFeatures");
+    const specs = document.getElementById("modalSpecs");
+
+    document.querySelectorAll(".view-details").forEach(button => {
+      button.addEventListener("click", () => {
+        title.textContent = button.dataset.name;
+        price.textContent = button.dataset.price;
+
+        features.innerHTML = "";
+        button.dataset.features.split(",").forEach(f => {
+          const li = document.createElement("li");
+          li.textContent = f;
+          features.appendChild(li);
+        });
+
+        specs.innerHTML = "";
+        button.dataset.specs.split(",").forEach(s => {
+          const li = document.createElement("li");
+          li.textContent = s.trim();
+          specs.appendChild(li);
+        });
+
+        modal.style.display = "flex";
+      });
+    });
+
+
+    closeModal.onclick = () => { modal.style.display = "none"; };
+    window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+  </script>
+</div>
 </body>
 </html>
