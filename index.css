@@ -646,3 +646,48 @@ body{
       text-align: center;
     }
    
+ 
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      .div3-2{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 570px;
+        
+      }
+      #div3-1{
+        width: 90%;
+        margin-left: 20px;
+        max-width: 400px;
+      }
+       #img3-1 {
+    position: absolute;
+    left: 50px;
+    top: 680px;     
+    display: block;
+    margin: 40px auto 0;
+    width: 90%;
+    height: auto;   
+    width: 300px;
+        
+  }
+  #footer5-1{
+    
+    margin-top: 400px;
+  }
+
+  #customers-reviews{ 
+    position: absolute;
+    top: 1100px;
+    left: -350px;
+    
+    }
+    
+
+  }
