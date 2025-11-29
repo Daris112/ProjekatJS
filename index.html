@@ -8,7 +8,11 @@
   <style>
     body{
        background-image: linear-gradient(rgba(59, 60, 66, 0.7),rgb(4,9,30,0.7)), url(background.png);
-      background-size:  1250px;;
+      background-size:  1350px;
+      
+      @media (max-width: 768px) {
+        background-size: 1050px;
+      }
     }
   </style>
 </head>
@@ -17,7 +21,9 @@
 
   <nav>
     <div class="logo">Elite<p>Motors</p></div>
-    <ul>
+
+    <div id="hamburger">☰</div>
+    <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="inventory1.html">Inventory</a></li>
       <li><a href="aboutus.html">About Us</a></li>
@@ -72,6 +78,17 @@
       alert("Your message has been sent! Thank you for contacting Elite Motors.");
     }
   </script>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+  </script>
+
 </div>
 </body>
 </html>

@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<nav>
+  <div class="logo">Elite<p>Motors</p></div>
 
-    <nav>
-    <div class="logo">Elite<p>Motors</p></div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="inventory1.html">Inventory</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="rewievs.html">Reviews</a></li>
-    </ul>
-  </nav>
+  <!-- HAMBURGER ICON -->
+  <div id="hamburger">☰</div>
+
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="inventory1.html">Inventory</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="rewievs.html">Reviews</a></li>
+  </ul>
+</nav>
 
      <div id="div3">
 
@@ -27,12 +30,10 @@
     <h2 id="h3-2">Our Story</h2>
     <p class="p3-1">Founded in 1995, Elite Motors has been serving the community with premium automotive solutions for over 25 years. We started as a small family business with a simple mission: to provide exceptional vehicles and unmatched customer service.</p>
     <p class="p3-1" id="p3-2">Today, we're proud to be one of the region's leading dealerships, representing world-class brands including BMW, Mercedes-Benz, Audi, Toyota, and Tesla. Our commitment to excellence has earned us numerous awards and, more importantly, the trust of thousands of satisfied customers.</p>
-    </div>
-
-    <div>
+   
       <img src="images/staff.png" alt="" id="img3-1">
     </div>
-    
+    <div class="div3-2">
      <h2 class="h3-3">Our Mission & Values</h2>
     <div class="values">
       <div class="value-box">
@@ -51,6 +52,7 @@
         <p>Building relationships based on honesty and transparency.</p>
       </div>
       </div>
+    </div>
        <footer>
     <div class="footer-container">
       <div>
@@ -77,6 +79,15 @@
     </div>
   </footer>
   </div>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+  </script>
 
 </body>
 </html>

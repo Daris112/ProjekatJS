@@ -10,7 +10,9 @@
 
     <nav>
     <div class="logo">Elite<p>Motors</p></div>
-    <ul>
+
+    <div id="hamburger">☰</div>
+    <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="inventory1.html">Inventory</a></li>
       <li><a href="aboutus.html">About Us</a></li>
@@ -96,5 +98,16 @@
       alert("Your message has been sent! Thank you for contacting Elite Motors.");
     }
   </script>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+  </script>
+
 </body>
 </html>

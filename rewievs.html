@@ -15,7 +15,9 @@
 
     <nav>
     <div class="logo">Elite<p>Motors</p></div>
-    <ul>
+
+    <div id="hamburger">☰</div>
+    <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="inventory1.html">Inventory</a></li>
       <li><a href="aboutus.html">About Us</a></li>
@@ -53,8 +55,8 @@
       <textarea rows="4" placeholder="Your review..." id="textarea6-1"></textarea>
       <button onclick="sendMessage()" id="button6-1">Send Message</button>
     </div>
-     <footer>
-    <div class="footer-container">
+     <footer id="footer5-1">
+    <div class="footer-container" >
       <div>
         <h3>Elite<p id="p5-1">Motors</p></h3>
         <p>Your trusted partner for premium vehicles. We offer the finest selection of BMW, Mercedes-Benz, Audi, Toyota, and a lot of other vehicles with exceptional customer service.</p>
@@ -84,5 +86,16 @@
       alert("Your message has been sent! Thank you for contacting Elite Motors.");
     }
   </script>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+  </script>
+
 </body>
 </html>
